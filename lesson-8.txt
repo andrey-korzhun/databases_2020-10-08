@@ -19,9 +19,9 @@ SELECT CASE(p.gender)
  	COUNT(*) AS total_likes
   	FROM users
   		JOIN likes
-      	  ON users.id = likes.target_id    
-    	JOIN profiles
-      	  ON users.id = profiles.user_id
+      	  	  ON users.id = likes.target_id    
+    		JOIN profiles
+      	  	  ON users.id = profiles.user_id
   	GROUP BY profiles.user_id
   	ORDER BY profiles.birthday DESC
   	LIMIT 10;
