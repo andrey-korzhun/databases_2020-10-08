@@ -222,7 +222,7 @@ SELECT
 FROM (
     SELECT p.gender, COUNT(*) n_likes
     FROM profiles p, likes l
-    WHERE p.user_id = l.user_id  -- пришлось один JOIN использовать
+    WHERE p.user_id = l.user_id 
     GROUP BY p.gender
 ) gender_likes
 ORDER BY n_likes DESC LIMIT 1
