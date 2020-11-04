@@ -1,5 +1,3 @@
-К восьмому уроку, так как не открылось (если откроется - повторю)
-```
 -- Кто активнее?
 SELECT CASE(p.gender)
 	WHEN 'F' THEN 'Woman'
@@ -42,4 +40,3 @@ SELECT
 	GROUP BY users.id
 	ORDER BY 'Overall activity'
 	LIMIT 10;
-```
